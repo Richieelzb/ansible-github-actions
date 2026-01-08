@@ -1,4 +1,4 @@
-resource "aws_instance" "ansible-controller" {
+resource "aws_instance" "ansible-ec2" {
   ami = data.aws_ami.my-data-ami.id
   //ami = "ami-0bc691261a82b32bc"
   instance_type = var.instance-type-list[0]
