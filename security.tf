@@ -1,5 +1,5 @@
 /////////////////VPC 1 SG/////////////////
-resource "aws_security_group" "public-sg-vpc1" {
+resource "aws_security_group" "control-sg" {
   name        = "allow-public-sg-1"
   description = "allow-public-sg-1"
   vpc_id      = module.vpc1.vpc_id
@@ -32,7 +32,7 @@ resource "aws_security_group" "public-sg-vpc1" {
   }
 }
 
-resource "aws_security_group" "private-sg-vpc1" {
+resource "aws_security_group" "ec2-sg" {
   name        = "allow-pvt-sg-1"
   description = "allow-pvt-sg-1"
   vpc_id      = module.vpc1.vpc_id
