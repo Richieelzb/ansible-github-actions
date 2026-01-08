@@ -43,9 +43,5 @@ data "aws_ami" "my-centos-ami" {
     name   = "architecture"
     values = ["x86_64"]
   }
-  
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
+
 }
