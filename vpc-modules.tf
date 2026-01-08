@@ -8,7 +8,7 @@ module "vpc1" {
 
   azs             = var.vpc_availability_zones_vpc1
   public_subnets  = var.vpc_public_subnets_vpc1
-  private_subnets = var.vpc_private_subnets_vpc1
+  //private_subnets = var.vpc_private_subnets_vpc1
   // database_subnets = var.vpc_database_subnets_vpc1
 
   // create_database_subnet_group       = var.vpc_create_database_subnet_group_vpc1
