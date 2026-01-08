@@ -1,10 +1,10 @@
 data "aws_ami" "my-data-ami" {
   most_recent = true
-  owners      = ["amazon"]
+  owners      = ["099720109477"]
 
   filter {
     name   = "name"
-    values = ["al2023-*-x86_64"]
+    values = ["ubuntu-*-amd64-*"]
   }
 
   filter {
