@@ -4,7 +4,7 @@ data "aws_ami" "my-data-ami" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/Images/*-amd64-server-*"]
+    values = ["ubuntu/*-amd64-server-*"]
   }
 
   filter {
